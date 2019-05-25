@@ -1,7 +1,8 @@
 # WinServer
 
-**Organización de la empresa
-DEPARTAMENTOS**
+**Organización de la empresa**
+
+**DEPARTAMENTOS**
 La empresa está organizada en tres departamentos los cuales son:
 - Administracion
 - Contabilidad
@@ -90,3 +91,39 @@ Modificamos los valores que queremos dar en nuestra red, así como si queremos l
 **Configuracion equipo cliente
 Pasos previos**
 Primero cambiaremos el nombre del equipo por uno de los que hemos configurado en el servidor. Despues debemos cambiar el grupo de trabajo por el dominio del servidor. Una vez hecho eso nos pedirá la contraseña del administrador del sistema del servidor y ya se tendra acceso con los usuarios utilizados después de reiniciar el equipo.
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/33.png)
+
+Despues nos identificaremos con un usuario con privilegios, al ser la primera vez que conectamos para vincular el equipo con el servidor, lo hacemos con el administrador.
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/34.png)
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/35.png)
+
+Ahora, en el servidor deberemos habilitar al usuario o usuarios que pueden hacer "log in". Esto lo hacemos desde "Usuarios de AD" presionando con el boton derecho sobre el usuario y pinchando sobre la opcion de "habilitar".
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/38.png)
+
+Ahora, volviendo a nuestro equipo cliente trataremos de hacer login con el usuario.
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/37.png)
+
+**RESTRICCION DE HORARIO**
+Como vimos antes, limitamos el acceso al servidor a una franja horaria. Al tratar de autenticarnos con el usuario nos mostrará un error.
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/39.png)
+
+**LOG IN**
+Cuando entramos con un usuario valido y que cumple con las restricciones se nos dará acceso a nuestro escritorio.
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/36.png)
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/40.png)
+
+**DCHP**
+Podemos comprobar que el DHCP de nuestro servidor está habilitado y funcionando si desde nuestro cliente, estando configurado paa recibir DHCP previamente, nos vamos a la consola de sistema y escribimos "ipconfig".
+![Texto alternativo](https://github.com/SomaTherion/WinServer/blob/master/41.png)
+
+Vemos que la IP asignada está dentro de los valores que establecimos en nuestro DHCP y que el sufijo DNS es nuestro servidor.
+
+
+
+
+
+
+
+
+
+
